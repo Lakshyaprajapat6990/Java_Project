@@ -25,8 +25,8 @@ public class HomeController {
     @RequestMapping(method = RequestMethod.POST, path = "/account/signup")
     public String userRegistration(HttpServletRequest request){
 
-        String firstName = request.getParameter("first");
-        String lastName = request.getParameter("last");
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
         String emailId = request.getParameter("email");
         String passwordU = request.getParameter("password");
 
